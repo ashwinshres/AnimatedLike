@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RPt-aB-9kc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="4nw-Kx-swR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="RPt-aB-9kc" customClass="ViewController" customModule="AnimatedLike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w4m-W6-2bk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4w-Gt-5sc" customClass="LikeAbleView" customModule="AnimatedLike" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-45" width="414" height="996"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head.png" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-ae-jhY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="996"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EG8-ae-jhY" firstAttribute="centerY" secondItem="j4w-Gt-5sc" secondAttribute="centerY" id="EIW-7B-k5I"/>
+                                    <constraint firstItem="EG8-ae-jhY" firstAttribute="centerX" secondItem="j4w-Gt-5sc" secondAttribute="centerX" id="SoS-09-TRS"/>
+                                    <constraint firstItem="EG8-ae-jhY" firstAttribute="height" secondItem="j4w-Gt-5sc" secondAttribute="height" id="kkO-Yq-sRP"/>
+                                    <constraint firstItem="EG8-ae-jhY" firstAttribute="width" secondItem="j4w-Gt-5sc" secondAttribute="width" id="nCP-pu-Afz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-m4-5la" customClass="BounceAbleView" customModule="AnimatedLike" customModuleProvider="target">
+                                <rect key="frame" x="344" y="74" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="kah-ET-une">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kah-ET-une" secondAttribute="height" multiplier="1:1" id="xQy-Nf-k34"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.92549019610000005" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kah-ET-une" firstAttribute="centerY" secondItem="0n7-m4-5la" secondAttribute="centerY" id="Pv4-P3-vWd"/>
+                                    <constraint firstItem="kah-ET-une" firstAttribute="centerX" secondItem="0n7-m4-5la" secondAttribute="centerX" id="Rqg-S8-D14"/>
+                                    <constraint firstItem="kah-ET-une" firstAttribute="width" secondItem="0n7-m4-5la" secondAttribute="width" constant="-20" id="eIE-vH-bhA"/>
+                                    <constraint firstAttribute="width" constant="40" id="qVj-bA-kML"/>
+                                    <constraint firstAttribute="width" secondItem="0n7-m4-5la" secondAttribute="height" multiplier="1:1" id="ta2-q3-5dx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="0n7-m4-5la" firstAttribute="width" secondItem="0n7-m4-5la" secondAttribute="height" multiplier="1:1" id="3L4-nx-7CA"/>
+                            <constraint firstItem="0n7-m4-5la" firstAttribute="top" secondItem="45j-mA-luQ" secondAttribute="top" constant="30" id="OAY-Hc-iLE"/>
+                            <constraint firstItem="j4w-Gt-5sc" firstAttribute="centerX" secondItem="45j-mA-luQ" secondAttribute="centerX" id="WEw-sn-xDj"/>
+                            <constraint firstItem="45j-mA-luQ" firstAttribute="trailing" secondItem="0n7-m4-5la" secondAttribute="trailing" constant="30" id="XQ3-B4-gZe"/>
+                            <constraint firstItem="j4w-Gt-5sc" firstAttribute="height" secondItem="w4m-W6-2bk" secondAttribute="height" constant="100" id="aLO-rW-o6v"/>
+                            <constraint firstItem="j4w-Gt-5sc" firstAttribute="centerY" secondItem="45j-mA-luQ" secondAttribute="centerY" id="beC-a6-HMn"/>
+                            <constraint firstItem="j4w-Gt-5sc" firstAttribute="width" secondItem="w4m-W6-2bk" secondAttribute="width" id="fPQ-vp-x29"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="45j-mA-luQ"/>
                     </view>
+                    <connections>
+                        <outlet property="bounceableView" destination="0n7-m4-5la" id="JrU-j3-boP"/>
+                        <outlet property="likeableView" destination="j4w-Gt-5sc" id="HvU-d6-6hg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ut-Jt-wMf" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="head.png" width="163.19999694824219" height="162.72000122070312"/>
+        <image name="heart.png" width="19.200000762939453" height="19.200000762939453"/>
+    </resources>
 </document>

@@ -12,6 +12,17 @@
 		5D0EEFB9225CDFB4002B4779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EEFB7225CDFB4002B4779 /* Main.storyboard */; };
 		5D0EEFBB225CDFB5002B4779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EEFBA225CDFB5002B4779 /* Assets.xcassets */; };
 		5D0EEFBE225CDFB5002B4779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EEFBC225CDFB5002B4779 /* LaunchScreen.storyboard */; };
+		5D0EEFCD225CDFC4002B4779 /* TapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFC6225CDFC4002B4779 /* TapHandler.swift */; };
+		5D0EEFCE225CDFC4002B4779 /* BounceAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFC7225CDFC4002B4779 /* BounceAble.swift */; };
+		5D0EEFCF225CDFC4002B4779 /* Tapable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFC8225CDFC4002B4779 /* Tapable.swift */; };
+		5D0EEFD0225CDFC4002B4779 /* FlyAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFC9225CDFC4002B4779 /* FlyAble.swift */; };
+		5D0EEFD1225CDFC4002B4779 /* AnimatableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFCA225CDFC4002B4779 /* AnimatableConstants.swift */; };
+		5D0EEFD2225CDFC4002B4779 /* FlyableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFCB225CDFC4002B4779 /* FlyableView.swift */; };
+		5D0EEFD3225CDFC4002B4779 /* AnimateableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EEFCC225CDFC4002B4779 /* AnimateableHelper.swift */; };
+		5D0EEFD7225CDFF7002B4779 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EEFD5225CDFF6002B4779 /* head.png */; };
+		5D0EEFD9225CE039002B4779 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EEFD8225CE039002B4779 /* heart.png */; };
+		5DC23484225CE0CC00136C69 /* BounceAbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC23482225CE0CC00136C69 /* BounceAbleView.swift */; };
+		5DC23485225CE0CC00136C69 /* LikeAbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC23483225CE0CC00136C69 /* LikeAbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		5D0EEFBA225CDFB5002B4779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0EEFBD225CDFB5002B4779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0EEFBF225CDFB5002B4779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0EEFC6225CDFC4002B4779 /* TapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHandler.swift; sourceTree = "<group>"; };
+		5D0EEFC7225CDFC4002B4779 /* BounceAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAble.swift; sourceTree = "<group>"; };
+		5D0EEFC8225CDFC4002B4779 /* Tapable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tapable.swift; sourceTree = "<group>"; };
+		5D0EEFC9225CDFC4002B4779 /* FlyAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyAble.swift; sourceTree = "<group>"; };
+		5D0EEFCA225CDFC4002B4779 /* AnimatableConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableConstants.swift; sourceTree = "<group>"; };
+		5D0EEFCB225CDFC4002B4779 /* FlyableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyableView.swift; sourceTree = "<group>"; };
+		5D0EEFCC225CDFC4002B4779 /* AnimateableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateableHelper.swift; sourceTree = "<group>"; };
+		5D0EEFD5225CDFF6002B4779 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		5D0EEFD8225CE039002B4779 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		5DC23482225CE0CC00136C69 /* BounceAbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAbleView.swift; sourceTree = "<group>"; };
+		5DC23483225CE0CC00136C69 /* LikeAbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeAbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,33 @@
 		5D0EEFB2225CDFB4002B4779 /* AnimatedLike */ = {
 			isa = PBXGroup;
 			children = (
+				5D0EEFD8225CE039002B4779 /* heart.png */,
+				5D0EEFD5225CDFF6002B4779 /* head.png */,
+				5D0EEFC5225CDFC4002B4779 /* Protocol */,
 				5D0EEFB3225CDFB4002B4779 /* AppDelegate.swift */,
 				5D0EEFB5225CDFB4002B4779 /* ViewController.swift */,
 				5D0EEFB7225CDFB4002B4779 /* Main.storyboard */,
+				5DC23482225CE0CC00136C69 /* BounceAbleView.swift */,
+				5DC23483225CE0CC00136C69 /* LikeAbleView.swift */,
 				5D0EEFBA225CDFB5002B4779 /* Assets.xcassets */,
 				5D0EEFBC225CDFB5002B4779 /* LaunchScreen.storyboard */,
 				5D0EEFBF225CDFB5002B4779 /* Info.plist */,
 			);
 			path = AnimatedLike;
+			sourceTree = "<group>";
+		};
+		5D0EEFC5225CDFC4002B4779 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5D0EEFC6225CDFC4002B4779 /* TapHandler.swift */,
+				5D0EEFC7225CDFC4002B4779 /* BounceAble.swift */,
+				5D0EEFC8225CDFC4002B4779 /* Tapable.swift */,
+				5D0EEFC9225CDFC4002B4779 /* FlyAble.swift */,
+				5D0EEFCA225CDFC4002B4779 /* AnimatableConstants.swift */,
+				5D0EEFCB225CDFC4002B4779 /* FlyableView.swift */,
+				5D0EEFCC225CDFC4002B4779 /* AnimateableHelper.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0EEFD7225CDFF7002B4779 /* head.png in Resources */,
 				5D0EEFBE225CDFB5002B4779 /* LaunchScreen.storyboard in Resources */,
+				5D0EEFD9225CE039002B4779 /* heart.png in Resources */,
 				5D0EEFBB225CDFB5002B4779 /* Assets.xcassets in Resources */,
 				5D0EEFB9225CDFB4002B4779 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0EEFCD225CDFC4002B4779 /* TapHandler.swift in Sources */,
+				5D0EEFD1225CDFC4002B4779 /* AnimatableConstants.swift in Sources */,
+				5DC23484225CE0CC00136C69 /* BounceAbleView.swift in Sources */,
+				5D0EEFD0225CDFC4002B4779 /* FlyAble.swift in Sources */,
 				5D0EEFB6225CDFB4002B4779 /* ViewController.swift in Sources */,
 				5D0EEFB4225CDFB4002B4779 /* AppDelegate.swift in Sources */,
+				5D0EEFCF225CDFC4002B4779 /* Tapable.swift in Sources */,
+				5DC23485225CE0CC00136C69 /* LikeAbleView.swift in Sources */,
+				5D0EEFD2225CDFC4002B4779 /* FlyableView.swift in Sources */,
+				5D0EEFCE225CDFC4002B4779 /* BounceAble.swift in Sources */,
+				5D0EEFD3225CDFC4002B4779 /* AnimateableHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

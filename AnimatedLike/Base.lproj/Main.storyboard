@@ -34,7 +34,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0n7-m4-5la" customClass="BounceAbleView" customModule="AnimatedLike" customModuleProvider="target">
-                                <rect key="frame" x="344" y="74" width="40" height="40"/>
+                                <rect key="frame" x="364" y="55" width="40" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="kah-ET-une">
                                         <rect key="frame" x="10" y="10" width="20" height="20"/>
@@ -56,21 +56,71 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-ge-Vrp">
+                                <rect key="frame" x="15" y="812" width="384" height="50"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGJ-2i-5GJ" customClass="FloatableView" customModule="AnimatedLike" customModuleProvider="target">
+                                        <rect key="frame" x="334" y="0.0" width="50" height="50"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="wiD-TA-vQQ">
+                                                <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wiD-TA-vQQ" secondAttribute="height" multiplier="1:1" id="Yed-wu-VnG"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.85490196080000003" green="0.92549019610000005" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VGJ-2i-5GJ" secondAttribute="height" multiplier="1:1" id="7wx-Ih-OeZ"/>
+                                            <constraint firstItem="wiD-TA-vQQ" firstAttribute="width" secondItem="VGJ-2i-5GJ" secondAttribute="width" constant="-20" id="OyR-kk-GxX"/>
+                                            <constraint firstItem="wiD-TA-vQQ" firstAttribute="centerY" secondItem="VGJ-2i-5GJ" secondAttribute="centerY" id="RDN-d7-XaD"/>
+                                            <constraint firstItem="wiD-TA-vQQ" firstAttribute="centerX" secondItem="VGJ-2i-5GJ" secondAttribute="centerX" id="yOj-XS-IjS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VGJ-2i-5GJ" firstAttribute="centerY" secondItem="rYh-ge-Vrp" secondAttribute="centerY" id="Ec5-ZH-mSS"/>
+                                    <constraint firstAttribute="trailing" secondItem="VGJ-2i-5GJ" secondAttribute="trailing" id="QbR-Ly-mhv"/>
+                                    <constraint firstAttribute="height" constant="50" id="fb6-T8-xud"/>
+                                    <constraint firstItem="VGJ-2i-5GJ" firstAttribute="height" secondItem="rYh-ge-Vrp" secondAttribute="height" id="s1D-hF-K0r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lW-4e-u7V">
+                                <rect key="frame" x="20" y="64" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="g9z-nM-6pv"/>
+                                    <constraint firstAttribute="width" constant="180" id="l6o-hm-2sl"/>
+                                </constraints>
+                                <state key="normal" title="Auto generate floating like"/>
+                                <connections>
+                                    <action selector="onAutoGenerateLikeTapped:" destination="RPt-aB-9kc" eventType="touchUpInside" id="aLh-IN-pD9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0n7-m4-5la" firstAttribute="width" secondItem="0n7-m4-5la" secondAttribute="height" multiplier="1:1" id="3L4-nx-7CA"/>
-                            <constraint firstItem="0n7-m4-5la" firstAttribute="top" secondItem="45j-mA-luQ" secondAttribute="top" constant="30" id="OAY-Hc-iLE"/>
+                            <constraint firstItem="0n7-m4-5la" firstAttribute="top" secondItem="j4w-Gt-5sc" secondAttribute="top" constant="100" id="0UG-tC-Kh2"/>
+                            <constraint firstItem="45j-mA-luQ" firstAttribute="bottom" secondItem="rYh-ge-Vrp" secondAttribute="bottom" id="6MX-Sf-cEH"/>
+                            <constraint firstItem="8lW-4e-u7V" firstAttribute="top" secondItem="45j-mA-luQ" secondAttribute="top" constant="20" id="6Og-XO-j3p"/>
                             <constraint firstItem="j4w-Gt-5sc" firstAttribute="centerX" secondItem="45j-mA-luQ" secondAttribute="centerX" id="WEw-sn-xDj"/>
-                            <constraint firstItem="45j-mA-luQ" firstAttribute="trailing" secondItem="0n7-m4-5la" secondAttribute="trailing" constant="30" id="XQ3-B4-gZe"/>
                             <constraint firstItem="j4w-Gt-5sc" firstAttribute="height" secondItem="w4m-W6-2bk" secondAttribute="height" constant="100" id="aLO-rW-o6v"/>
                             <constraint firstItem="j4w-Gt-5sc" firstAttribute="centerY" secondItem="45j-mA-luQ" secondAttribute="centerY" id="beC-a6-HMn"/>
                             <constraint firstItem="j4w-Gt-5sc" firstAttribute="width" secondItem="w4m-W6-2bk" secondAttribute="width" id="fPQ-vp-x29"/>
+                            <constraint firstItem="8lW-4e-u7V" firstAttribute="leading" secondItem="45j-mA-luQ" secondAttribute="leading" constant="20" id="fqR-tl-VQi"/>
+                            <constraint firstItem="rYh-ge-Vrp" firstAttribute="centerX" secondItem="45j-mA-luQ" secondAttribute="centerX" id="iC6-hj-Fkv"/>
+                            <constraint firstItem="rYh-ge-Vrp" firstAttribute="width" secondItem="w4m-W6-2bk" secondAttribute="width" constant="-30" id="ltS-O1-A7T"/>
+                            <constraint firstItem="0n7-m4-5la" firstAttribute="trailing" secondItem="j4w-Gt-5sc" secondAttribute="trailing" constant="-10" id="oCN-Ci-Hxi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="45j-mA-luQ"/>
                     </view>
                     <connections>
                         <outlet property="bounceableView" destination="0n7-m4-5la" id="JrU-j3-boP"/>
+                        <outlet property="likeFloatableView" destination="VGJ-2i-5GJ" id="Wx8-rW-Ltd"/>
                         <outlet property="likeableView" destination="j4w-Gt-5sc" id="HvU-d6-6hg"/>
                     </connections>
                 </viewController>

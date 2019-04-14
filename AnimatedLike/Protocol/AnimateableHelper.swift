@@ -28,4 +28,29 @@ class AnimatableHelper {
         return parentViewController
     }
     
+    static func getCenter(for view: UIView,
+                                      withRespectToIts parent: UIView,
+                                      on parentControllerView: UIView) -> CGPoint {
+        let destinationPosition = parentControllerView.convert(view.frame, from: parent)
+        let destinationCenterX = destinationPosition.origin.x + (destinationPosition.size.width / 2.0)
+        let destinationCenterY = destinationPosition.origin.y + (destinationPosition.size.height / 2.0)
+        return CGPoint(x: destinationCenterX, y: destinationCenterY)
+    }
+    
+}
+
+
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(red:   .random(),
+                       green: .random(),
+                       blue:  .random(),
+                       alpha: 1.0)
+    }
 }

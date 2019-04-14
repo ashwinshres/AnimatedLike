@@ -8,6 +8,9 @@
 
 import UIKit
 
-class LikeAbleView: UIView, Tapable {
+class LikeAbleView: UIView, Tapable, Shakeable, Floatable {
     
+    var duration: Double = 0.05
+    var repeatcount: Float = 5
+    var distance: CGFloat = 5
 }

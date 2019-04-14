@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlyableView: UIView, Flyable, BounceAble {
+class FlyableView: UIView, Flyable, Bounceable {
     
     var bounceScale: CGFloat = 3
     var initialAlpha: CGFloat = 0.0

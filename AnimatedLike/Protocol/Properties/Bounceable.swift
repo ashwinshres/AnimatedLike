@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol BounceAble: class {
+protocol Bounceable: class {
     func bounce(didBounce: @escaping () -> ())
     var bounceScale: CGFloat {set get}
     var initialAlpha: CGFloat {set get}
 }
 
-extension BounceAble where Self: UIView {
+extension Bounceable where Self: UIView {
     
     var bounceScale: CGFloat {
         set { bounceScale = newValue }

@@ -8,6 +8,7 @@
 
 import UIKit
 
-class BounceAbleView: UIView, BounceAble {
+class BounceAbleView: UIView, Bounceable, Tapable {
 
+    var numberOfTapsRequired: Int = 1
 }

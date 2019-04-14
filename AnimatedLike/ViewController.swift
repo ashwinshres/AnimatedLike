@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var rotateAbleProductView: RotableProductImageView!
     @IBOutlet var likeFloatableView: FloatableView!
     @IBOutlet var likeableView: LikeAbleView!
     @IBOutlet var bounceableView: BounceAbleView!
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        rotateAbleProductView.initiateRotation()
         
         likeableView.tap(with: nil) { (flyAbleView) in
             // want the animated like view to fly to the like button in your design?
@@ -38,6 +41,7 @@ class ViewController: UIViewController {
             let random = Int(arc4random_uniform(5 - 0) + 0)
             self.likeFloatableView.addFloatingView(with:  self.images[random])
         }
+        
         //you can send your own custom view
         /*
         let customView = UIView(frame: CGRect(origin: .zero, size: AnimatableConstants.flyableViewSize))
@@ -65,7 +69,6 @@ class ViewController: UIViewController {
             timer.invalidate()
             timer = nil
         }
-        
     }
     
 }

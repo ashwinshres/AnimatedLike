@@ -4,6 +4,9 @@ Animated Like is a protocol oriented, an ios reusable component written in Swift
 This was initially made with an inspiration that, in any ecommerce app, for any product a favourite icon is tapped to add it to favourite, which is simple and plain. So, I thought.... <br/> <br>
 How about when a view or product is tapped, a "heart icon" is generated and after generation it flies to a destination view and the destination bounces as completion.
 
+![Alt Text](https://media.giphy.com/media/3KXUaB34mwSRnZWPTh/giphy.gif)
+
+
 
 How, I have tried to add other features like:
 1. Product 360 view which can be rotated, and the view can auto rotate too.

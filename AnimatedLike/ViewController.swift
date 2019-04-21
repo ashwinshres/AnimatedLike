@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         rotateAbleProductView.initiateRotation()
-        
+        bounceableView.shimmer()
         likeableView.tap(with: nil) { (flyAbleView) in
             // want the animated like view to fly to the like button in your design?
             flyAbleView?.fly(to: self.bounceableView, didReachDestination: {
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
                     // do anything after the bounce is completed
                     // make be shake the view??
                     self.likeableView.shakeAlongXAxis()
+                    self.bounceableView.stopShimmer()
                 }
             })
         }

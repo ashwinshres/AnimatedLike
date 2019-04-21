@@ -24,9 +24,15 @@ struct AnimatableConstants {
     static let shakeDuration: Double = 0.05
     static let shakeDistance: CGFloat = 5
     
-    
     static let floatableMinDimension: CGFloat = 20.0
     static let floatableMaxDimension: CGFloat = 30.0
+    
+    static let initialPulseScale:Float = 0
+    static let nextPulseAfter: TimeInterval = 0
+    static let animationDuration: TimeInterval = 1.5
+    static let pulseColor: UIColor = UIColor.red
+    static let radius: CGFloat = 200
+    static let numberOfPulses: Float = .infinity
     
 }
 

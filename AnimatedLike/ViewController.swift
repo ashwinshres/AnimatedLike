@@ -34,11 +34,13 @@ class ViewController: UIViewController {
                     // make be shake the view??
                     self.likeableView.shakeAlongXAxis()
                     self.bounceableView.stopShimmer()
+                    self.likeFloatableView.stopPulsating()
                 }
             })
         }
         
         likeFloatableView.tap(with: nil) { _ in
+            self.likeFloatableView.pulsate()
             let random = Int(arc4random_uniform(5 - 0) + 0)
             self.likeFloatableView.addFloatingView(with:  self.images[random])
         }

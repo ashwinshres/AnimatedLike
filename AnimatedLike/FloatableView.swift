@@ -8,8 +8,11 @@
 
 import UIKit
 
-class FloatableView: UIView, Tapable, Floatable {
+class FloatableView: UIView, Tapable, Floatable, Pulsable {
     
     var numberOfTapsRequired: Int = 1
     var generateFlyAble: Bool = false
+    
+    var numberOfPulses: Float = 10
+    
 }

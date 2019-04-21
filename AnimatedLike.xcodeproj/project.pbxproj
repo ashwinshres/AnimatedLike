@@ -29,6 +29,7 @@
 		5DC23484225CE0CC00136C69 /* BounceAbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC23482225CE0CC00136C69 /* BounceAbleView.swift */; };
 		5DC23485225CE0CC00136C69 /* LikeAbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC23483225CE0CC00136C69 /* LikeAbleView.swift */; };
 		5DC7B49F22699E5000C7C4E9 /* Shimmerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7B49E22699E5000C7C4E9 /* Shimmerable.swift */; };
+		5DE73F17226C148100C13C76 /* Pulsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE73F16226C148100C13C76 /* Pulsable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		5DC23482225CE0CC00136C69 /* BounceAbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAbleView.swift; sourceTree = "<group>"; };
 		5DC23483225CE0CC00136C69 /* LikeAbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeAbleView.swift; sourceTree = "<group>"; };
 		5DC7B49E22699E5000C7C4E9 /* Shimmerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmerable.swift; sourceTree = "<group>"; };
+		5DE73F16226C148100C13C76 /* Pulsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				5D95805E2262DF780018FC7B /* Floatable.swift */,
 				5D62F74222630EE700139505 /* Rotatable.swift */,
 				5DC7B49E22699E5000C7C4E9 /* Shimmerable.swift */,
+				5DE73F16226C148100C13C76 /* Pulsable.swift */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				5D95805B226215C50018FC7B /* Flyable.swift in Sources */,
 				5D95805D226215D20018FC7B /* Shakeable.swift in Sources */,
 				5D62F74522631AF200139505 /* RotableProductImageView.swift in Sources */,
+				5DE73F17226C148100C13C76 /* Pulsable.swift in Sources */,
 				5D95805F2262DF780018FC7B /* Floatable.swift in Sources */,
 				5D0EEFD3225CDFC4002B4779 /* AnimateableHelper.swift in Sources */,
 			);
